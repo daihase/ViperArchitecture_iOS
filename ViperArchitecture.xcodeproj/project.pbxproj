@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		FC426A651C7EC00900049227 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC426A641C7EC00900049227 /* AppDelegate.swift */; };
-		FC426A671C7EC00900049227 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC426A661C7EC00900049227 /* ViewController.swift */; };
+		FC426A671C7EC00900049227 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC426A661C7EC00900049227 /* StartViewController.swift */; };
 		FC426A6A1C7EC00900049227 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC426A681C7EC00900049227 /* Main.storyboard */; };
 		FC426A6C1C7EC00900049227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC426A6B1C7EC00900049227 /* Assets.xcassets */; };
 		FC426A6F1C7EC00900049227 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC426A6D1C7EC00900049227 /* LaunchScreen.storyboard */; };
 		FC426A7A1C7EC00900049227 /* ViperArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC426A791C7EC00900049227 /* ViperArchitectureTests.swift */; };
 		FC426A851C7EC00900049227 /* ViperArchitectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC426A841C7EC00900049227 /* ViperArchitectureUITests.swift */; };
+		FC426A9A1C7EC6C800049227 /* CountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC426A991C7EC6C800049227 /* CountViewController.swift */; };
+		FC426A9C1C7ED58100049227 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC426A9B1C7ED58100049227 /* AppDependencies.swift */; };
+		FC426A9F1C7EDD2100049227 /* MainWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC426A9E1C7EDD2100049227 /* MainWireFrame.swift */; };
+		FC426AA31C7EDEE600049227 /* StoryboardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC426AA21C7EDEE600049227 /* StoryboardBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		FC426A611C7EC00900049227 /* ViperArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC426A641C7EC00900049227 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC426A661C7EC00900049227 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC426A661C7EC00900049227 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		FC426A691C7EC00900049227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC426A6B1C7EC00900049227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC426A6E1C7EC00900049227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,10 @@
 		FC426A801C7EC00900049227 /* ViperArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC426A841C7EC00900049227 /* ViperArchitectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperArchitectureUITests.swift; sourceTree = "<group>"; };
 		FC426A861C7EC00900049227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC426A991C7EC6C800049227 /* CountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountViewController.swift; sourceTree = "<group>"; };
+		FC426A9B1C7ED58100049227 /* AppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		FC426A9E1C7EDD2100049227 /* MainWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWireFrame.swift; sourceTree = "<group>"; };
+		FC426AA21C7EDEE600049227 /* StoryboardBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +105,12 @@
 		FC426A631C7EC00900049227 /* ViperArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				FC426A921C7EC0A700049227 /* Classes */,
 				FC426A641C7EC00900049227 /* AppDelegate.swift */,
-				FC426A661C7EC00900049227 /* ViewController.swift */,
-				FC426A681C7EC00900049227 /* Main.storyboard */,
 				FC426A6B1C7EC00900049227 /* Assets.xcassets */,
 				FC426A6D1C7EC00900049227 /* LaunchScreen.storyboard */,
 				FC426A701C7EC00900049227 /* Info.plist */,
+				FC426A9B1C7ED58100049227 /* AppDependencies.swift */,
 			);
 			path = ViperArchitecture;
 			sourceTree = "<group>";
@@ -123,6 +131,90 @@
 				FC426A861C7EC00900049227 /* Info.plist */,
 			);
 			path = ViperArchitectureUITests;
+			sourceTree = "<group>";
+		};
+		FC426A921C7EC0A700049227 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FC426AA01C7EDECD00049227 /* Common */,
+				FC426A981C7EC68600049227 /* Storyboard */,
+				FC426A931C7EC0AD00049227 /* Modules */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		FC426A931C7EC0AD00049227 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FC426A9D1C7EDC7F00049227 /* WireFrame */,
+				FC426A971C7EC0FA00049227 /* InteractorIO */,
+				FC426A961C7EC0F300049227 /* View */,
+				FC426A951C7EC0EB00049227 /* Interactor */,
+				FC426A941C7EC0B800049227 /* Presenter */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		FC426A941C7EC0B800049227 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		FC426A951C7EC0EB00049227 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		FC426A961C7EC0F300049227 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC426A661C7EC00900049227 /* StartViewController.swift */,
+				FC426A991C7EC6C800049227 /* CountViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FC426A971C7EC0FA00049227 /* InteractorIO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = InteractorIO;
+			sourceTree = "<group>";
+		};
+		FC426A981C7EC68600049227 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FC426A681C7EC00900049227 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		FC426A9D1C7EDC7F00049227 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				FC426A9E1C7EDD2100049227 /* MainWireFrame.swift */,
+			);
+			name = WireFrame;
+			sourceTree = "<group>";
+		};
+		FC426AA01C7EDECD00049227 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FC426AA11C7EDED400049227 /* View */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		FC426AA11C7EDED400049227 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC426AA21C7EDEE600049227 /* StoryboardBuilder.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +348,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC426A671C7EC00900049227 /* ViewController.swift in Sources */,
+				FC426AA31C7EDEE600049227 /* StoryboardBuilder.swift in Sources */,
+				FC426A9C1C7ED58100049227 /* AppDependencies.swift in Sources */,
+				FC426A9F1C7EDD2100049227 /* MainWireFrame.swift in Sources */,
+				FC426A9A1C7EC6C800049227 /* CountViewController.swift in Sources */,
+				FC426A671C7EC00900049227 /* StartViewController.swift in Sources */,
 				FC426A651C7EC00900049227 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

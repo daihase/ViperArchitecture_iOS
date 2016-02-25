@@ -1,25 +1,86 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StartViewController" id="BYZ-38-t0r" customClass="StartViewController" customModule="ViperArchitecture" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8x-d9-alz">
+                                <rect key="frame" x="143" y="269" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="l8x-d9-alz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="V7I-a3-yVO"/>
+                            <constraint firstItem="l8x-d9-alz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rk6-Er-yqG"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Count View Controller-->
+        <scene sceneID="yuE-fw-KeZ">
+            <objects>
+                <viewController storyboardIdentifier="CountViewController" id="z6m-UD-pEH" customClass="CountViewController" customModule="ViperArchitecture" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0tj-dy-cin"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y9K-GF-0se"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9J7-3e-e46">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGD-hH-egd">
+                                <rect key="frame" x="50" y="240" width="76" height="30"/>
+                                <state key="normal" title="Decrement"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfX-8Z-AbM">
+                                <rect key="frame" x="201" y="240" width="69" height="30"/>
+                                <state key="normal" title="Increment"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoR-vs-CMO">
+                                <rect key="frame" x="139" y="120" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EoR-vs-CMO" firstAttribute="top" secondItem="0tj-dy-cin" secondAttribute="bottom" constant="100" id="3xE-2b-b5d"/>
+                            <constraint firstAttribute="trailing" secondItem="hfX-8Z-AbM" secondAttribute="trailing" constant="50" id="8SA-7M-VKk"/>
+                            <constraint firstItem="hfX-8Z-AbM" firstAttribute="top" secondItem="CGD-hH-egd" secondAttribute="top" id="9qP-Bl-x9i"/>
+                            <constraint firstItem="CGD-hH-egd" firstAttribute="leading" secondItem="9J7-3e-e46" secondAttribute="leading" constant="50" id="auT-V1-vHT"/>
+                            <constraint firstItem="EoR-vs-CMO" firstAttribute="centerX" secondItem="9J7-3e-e46" secondAttribute="centerX" id="nLq-DY-2ap"/>
+                            <constraint firstItem="EoR-vs-CMO" firstAttribute="top" secondItem="0tj-dy-cin" secondAttribute="bottom" constant="50" id="oVh-ag-CiU"/>
+                            <constraint firstItem="EoR-vs-CMO" firstAttribute="bottom" secondItem="CGD-hH-egd" secondAttribute="top" constant="-100" id="s6l-ab-fZE"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="oVh-ag-CiU"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Jh-mp-0Zv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="634" y="316"/>
         </scene>
     </scenes>
 </document>
