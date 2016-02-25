@@ -11,7 +11,10 @@ import UIKit
 class MainWireFrame: NSObject {
 
     var startViewController: StartViewController?
+    var countViewController: CountViewController?
     var navigationController: UINavigationController?
+    
+    // Singleton.
     static var sharedInstance: MainWireFrame = {
         return MainWireFrame()
     }()
@@ -32,7 +35,14 @@ class MainWireFrame: NSObject {
     
     // カウントページ表示.
     func pushCountViewController() {
+        let presenter = CountPresenter()
+        let interactor = CountInteractor()
         let countViewController = StoryboardBuilder.sharedInstance.countViewController()
+        countViewController.countHandler = presenter
+        presenter.view = countViewController
+        presenter.interactor = interactor
+        interactor.output = presenter
         
+        startViewController?.navigationController?.pushViewController(countViewController, animated: true)
     }
 }

@@ -24,7 +24,7 @@ class StartViewController: UIViewController  {
     }
 
     @IBAction func tapStartButton(sender: AnyObject) {
-        startEventHandler
+        startEventHandler?.tapStartButton()
     }
 
 }

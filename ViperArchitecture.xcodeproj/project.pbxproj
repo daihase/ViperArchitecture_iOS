@@ -20,7 +20,10 @@
 		FC426AA31C7EDEE600049227 /* StoryboardBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC426AA21C7EDEE600049227 /* StoryboardBuilder.swift */; };
 		FC48CC0F1C7EE46300546D47 /* StartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC48CC0E1C7EE46300546D47 /* StartPresenter.swift */; };
 		FC48CC111C7EE48200546D47 /* StartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC48CC101C7EE48200546D47 /* StartInteractor.swift */; };
-		FC48CC1B1C7EF71D00546D47 /* StartInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC48CC1A1C7EF71D00546D47 /* StartInterface.swift */; };
+		FC48CC1D1C7F0A2200546D47 /* CountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC48CC1C1C7F0A2200546D47 /* CountPresenter.swift */; };
+		FC48CC1F1C7F0A3500546D47 /* CountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC48CC1E1C7F0A3500546D47 /* CountInteractor.swift */; };
+		FC48CC211C7F0B2200546D47 /* CountInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC48CC201C7F0B2200546D47 /* CountInteractorIO.swift */; };
+		FC48CC241C7F0C3F00546D47 /* CountViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC48CC231C7F0C3F00546D47 /* CountViewInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +63,10 @@
 		FC426AA21C7EDEE600049227 /* StoryboardBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardBuilder.swift; sourceTree = "<group>"; };
 		FC48CC0E1C7EE46300546D47 /* StartPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartPresenter.swift; sourceTree = "<group>"; };
 		FC48CC101C7EE48200546D47 /* StartInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartInteractor.swift; sourceTree = "<group>"; };
-		FC48CC1A1C7EF71D00546D47 /* StartInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartInterface.swift; sourceTree = "<group>"; };
+		FC48CC1C1C7F0A2200546D47 /* CountPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountPresenter.swift; sourceTree = "<group>"; };
+		FC48CC1E1C7F0A3500546D47 /* CountInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountInteractor.swift; sourceTree = "<group>"; };
+		FC48CC201C7F0B2200546D47 /* CountInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountInteractorIO.swift; sourceTree = "<group>"; };
+		FC48CC231C7F0C3F00546D47 /* CountViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountViewInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +243,7 @@
 		FC48CC131C7EE50500546D47 /* Count */ = {
 			isa = PBXGroup;
 			children = (
+				FC48CC221C7F0C1900546D47 /* Interface */,
 				FC48CC181C7EE60200546D47 /* InteractorIO */,
 				FC48CC171C7EE5F900546D47 /* WireFrame */,
 				FC48CC161C7EE5F400546D47 /* View */,
@@ -249,6 +256,7 @@
 		FC48CC141C7EE5E600546D47 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				FC48CC1C1C7F0A2200546D47 /* CountPresenter.swift */,
 			);
 			name = Presenter;
 			sourceTree = "<group>";
@@ -256,6 +264,7 @@
 		FC48CC151C7EE5EB00546D47 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				FC48CC1E1C7F0A3500546D47 /* CountInteractor.swift */,
 			);
 			name = Interactor;
 			sourceTree = "<group>";
@@ -278,6 +287,7 @@
 		FC48CC181C7EE60200546D47 /* InteractorIO */ = {
 			isa = PBXGroup;
 			children = (
+				FC48CC201C7F0B2200546D47 /* CountInteractorIO.swift */,
 			);
 			name = InteractorIO;
 			sourceTree = "<group>";
@@ -285,7 +295,14 @@
 		FC48CC191C7EF6DF00546D47 /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				FC48CC1A1C7EF71D00546D47 /* StartInterface.swift */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		FC48CC221C7F0C1900546D47 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				FC48CC231C7F0C3F00546D47 /* CountViewInterface.swift */,
 			);
 			name = Interface;
 			sourceTree = "<group>";
@@ -423,13 +440,16 @@
 			files = (
 				FC426AA31C7EDEE600049227 /* StoryboardBuilder.swift in Sources */,
 				FC48CC111C7EE48200546D47 /* StartInteractor.swift in Sources */,
-				FC48CC1B1C7EF71D00546D47 /* StartInterface.swift in Sources */,
+				FC48CC1D1C7F0A2200546D47 /* CountPresenter.swift in Sources */,
+				FC48CC241C7F0C3F00546D47 /* CountViewInterface.swift in Sources */,
 				FC426A9C1C7ED58100049227 /* AppDependencies.swift in Sources */,
 				FC426A9F1C7EDD2100049227 /* MainWireFrame.swift in Sources */,
 				FC48CC0F1C7EE46300546D47 /* StartPresenter.swift in Sources */,
 				FC426A9A1C7EC6C800049227 /* CountViewController.swift in Sources */,
 				FC426A671C7EC00900049227 /* StartViewController.swift in Sources */,
 				FC426A651C7EC00900049227 /* AppDelegate.swift in Sources */,
+				FC48CC211C7F0B2200546D47 /* CountInteractorIO.swift in Sources */,
+				FC48CC1F1C7F0A3500546D47 /* CountInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

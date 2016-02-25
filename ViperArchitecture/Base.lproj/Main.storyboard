@@ -18,7 +18,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8x-d9-alz">
-                                <rect key="frame" x="143" y="269" width="34" height="30"/>
+                                <rect key="frame" x="138.5" y="266" width="43" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="tapStartButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kdI-Tv-hIs"/>
@@ -51,16 +52,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGD-hH-egd">
-                                <rect key="frame" x="50" y="240" width="76" height="30"/>
+                                <rect key="frame" x="50" y="251" width="76" height="30"/>
                                 <state key="normal" title="Decrement"/>
+                                <connections>
+                                    <action selector="increment:" destination="z6m-UD-pEH" eventType="touchUpInside" id="lUf-Gu-d6o"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfX-8Z-AbM">
-                                <rect key="frame" x="201" y="240" width="69" height="30"/>
+                                <rect key="frame" x="201" y="251.5" width="69" height="30"/>
                                 <state key="normal" title="Increment"/>
+                                <connections>
+                                    <action selector="decrement:" destination="z6m-UD-pEH" eventType="touchUpInside" id="Iuj-7z-WMw"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoR-vs-CMO">
-                                <rect key="frame" x="139" y="120" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="128" y="120" width="63.5" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
