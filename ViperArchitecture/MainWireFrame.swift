@@ -22,11 +22,17 @@ class MainWireFrame: NSObject {
     
     // スタートページ表示.
     func presentStartViewControllerFromWindow(window window: UIWindow) {
-        // Storyboard生成クラスからTopViewControllerインスタンスを取得.
+        // Storyboard生成クラスからStartViewControllerインスタンスを取得.
         let startViewController = StoryboardBuilder.sharedInstance.startViewController()
-        startViewController.startEventHandler = startPresenter()
+        startViewController.startEventHandler = StartPresenter()
         self.startViewController = startViewController
         self.navigationController = window.rootViewController as? UINavigationController
-        self.navigationController?.viewControllers = [self.topViewController!]
+        self.navigationController?.viewControllers = [self.startViewController!]
+    }
+    
+    // カウントページ表示.
+    func pushCountViewController() {
+        let countViewController = StoryboardBuilder.sharedInstance.countViewController()
+        
     }
 }

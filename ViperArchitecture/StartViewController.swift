@@ -6,10 +6,13 @@
 //  Copyright © 2016年 Libra Studio, Inc. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class StartViewController: UIViewController {
+class StartViewController: UIViewController  {
 
+    var startEventHandler: StartPresenter?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +23,9 @@ class StartViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func tapStartButton(sender: AnyObject) {
+        startEventHandler
+    }
 
 }
 

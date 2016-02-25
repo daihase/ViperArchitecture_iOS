@@ -29,4 +29,14 @@ class StoryboardBuilder: NSObject {
         return StoryboardBuilder.storyboardWithIdentifier(identifier: "Main")
     }
     
+    // スタート画面のViewControllerを返す.
+    func startViewController() -> StartViewController {
+        return mainStoryboard?.instantiateViewControllerWithIdentifier("StartViewController") as! StartViewController
+    }
+    
+    // カウント画面のViewControllerを返す.
+    func countViewController() -> CountViewController {
+        return mainStoryboard?.instantiateViewControllerWithIdentifier("CountViewController")
+            as! CountViewController
+    }
 }
