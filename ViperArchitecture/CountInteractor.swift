@@ -25,8 +25,14 @@ class CountInteractor: NSObject, CountInteractorInput {
     }
     
     func decrement() {
-        self.count--
-        self.sendCount()
+        if canDecrement() {
+            self.count--
+            self.sendCount()
+        }
+    }
+    
+    func canDecrement() -> Bool {
+        return self.count > 0
     }
     
     func sendCount() {

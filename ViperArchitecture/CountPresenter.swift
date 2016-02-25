@@ -9,7 +9,7 @@
 import UIKit
 
 class CountPresenter: NSObject, CountInteractorOutput {
-
+    
     var view: CountViewInterface?
     var interactor: CountInteractorInput?
     var countFormatter: NSNumberFormatter?
@@ -28,11 +28,11 @@ class CountPresenter: NSObject, CountInteractorOutput {
     
     // MARK: - CountInteractorOutput Inplements
     func updateCount(count: Int){
-       self.view?.setCountText((self.countFormatter?.stringFromNumber(count))!)
+        self.view?.setCountText(String(count))
+        self.view?.setDecrementEnabled(canDecrementCount(count))
     }
     
-    func formattedCount(count: Int) {
-        return
+    func canDecrementCount(count: Int) -> Bool {
+        return (count > 0)
     }
-    
 }

@@ -11,8 +11,7 @@ import UIKit
 class StartPresenter: NSObject {
 
     func tapStartButton() {
-        // Count画面へ遷移.
+        // CountViewControllerへ遷移.
         MainWireFrame.sharedInstance.pushCountViewController()
     }
-    
 }

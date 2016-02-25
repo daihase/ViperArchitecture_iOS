@@ -23,9 +23,9 @@ class StartViewController: UIViewController  {
         // Dispose of any resources that can be recreated.
     }
 
+    // Startボタン押下.
     @IBAction func tapStartButton(sender: AnyObject) {
         startEventHandler?.tapStartButton()
     }
-
 }
 

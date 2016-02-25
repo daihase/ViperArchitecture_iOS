@@ -12,8 +12,18 @@ class CountViewController: UIViewController, CountViewInterface {
 
     var countHandler: CountPresenter?
     
+    @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var decrementButton: UIButton!
+    @IBOutlet weak var incrementButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.countLabel.text = "0"
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.countHandler?.updateView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,11 +33,12 @@ class CountViewController: UIViewController, CountViewInterface {
     // MARK: - CountViewInterface implements
     
     func setCountText(countText: String) {
-        <#code#>
+        self.countLabel.text = countText
     }
     
+    // Labelの数字が0以下ならDecrementButtonがグレーアウト.
     func setDecrementEnabled(enabled: Bool) {
-        <#code#>
+        self.decrementButton.enabled = enabled
     }
     
     // MARK: - Actions
@@ -41,5 +52,4 @@ class CountViewController: UIViewController, CountViewInterface {
     @IBAction func decrement(sender: AnyObject) {
         self.countHandler?.decrement()
     }
-    
 }

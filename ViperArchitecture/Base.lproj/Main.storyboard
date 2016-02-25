@@ -53,16 +53,18 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGD-hH-egd">
                                 <rect key="frame" x="50" y="251" width="76" height="30"/>
-                                <state key="normal" title="Decrement"/>
+                                <state key="normal" title="Decrement">
+                                    <color key="titleShadowColor" red="0.52651515149999994" green="0.51117975879999999" blue="0.51117975879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="increment:" destination="z6m-UD-pEH" eventType="touchUpInside" id="lUf-Gu-d6o"/>
+                                    <action selector="decrement:" destination="z6m-UD-pEH" eventType="touchUpInside" id="8Zv-aF-JMp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfX-8Z-AbM">
                                 <rect key="frame" x="201" y="251.5" width="69" height="30"/>
                                 <state key="normal" title="Increment"/>
                                 <connections>
-                                    <action selector="decrement:" destination="z6m-UD-pEH" eventType="touchUpInside" id="Iuj-7z-WMw"/>
+                                    <action selector="increment:" destination="z6m-UD-pEH" eventType="touchUpInside" id="wnn-aa-kq1"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoR-vs-CMO">
@@ -89,6 +91,11 @@
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="countLabel" destination="EoR-vs-CMO" id="bKC-qe-Qqh"/>
+                        <outlet property="decrementButton" destination="CGD-hH-egd" id="zcv-Mo-ZYY"/>
+                        <outlet property="incrementButton" destination="hfX-8Z-AbM" id="MZh-Ja-8UY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Jh-mp-0Zv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
