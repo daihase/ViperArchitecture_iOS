@@ -12,7 +12,6 @@ class CountPresenter: NSObject, CountInteractorOutput {
     
     var view: CountViewInterface?
     var interactor: CountInteractorInput?
-    var countFormatter: NSNumberFormatter?
     
     func updateView() {
         self.interactor?.requestCount()
